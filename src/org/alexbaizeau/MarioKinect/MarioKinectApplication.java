@@ -46,7 +46,7 @@ shouldRun = false;
         MarioKinectApplication app = new MarioKinectApplication(f);
         
         app.viewer = new UserTracker();
-        f.add("Center", app.viewer);
+        f.add("Center", app.viewer);	
         f.pack();
         f.setVisible(true);
         app.run();
@@ -55,7 +55,7 @@ shouldRun = false;
     void run()
     {
         while(shouldRun) {
-            viewer.updateDepth();
+        	
             viewer.repaint();
         }
         frame.dispose();
